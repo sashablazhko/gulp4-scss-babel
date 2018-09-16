@@ -1,0 +1,62 @@
+//font-family: 'SFNSDisplay';
+//font-family: 'PatuaOne-Regular';
+//font-family: 'HelveticaReg';
+$ff-main-title: 'SFNSDisplay';
+$ff-title: 'PatuaOne-Regular';
+$ff-text: 'HelveticaReg';
+
+$second-color: #ff6161;
+$third-color: #4d60cc;
+$text-color: #2c2c2c;
+
+@mixin tag-item(){
+
+}
+@mixin tag-item-hover{
+
+}
+@mixin img-on-bg{
+
+}
+
+@import "fonts";
+
+body {
+  font-family: $ff-text;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+input, select, textarea{
+  color: $second-color;
+  font-family: $ff-main-title;
+}
+
+.clearfix {
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+
+@import "responsive";
+
+body{
+  background-color: $second-color;
+}
