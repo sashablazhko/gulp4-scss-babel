@@ -1,0 +1,128 @@
+.icon{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-mouth{
+  font-size: 51.2rem;
+  width: 1em;
+}
+
+.icon-pumpkin{
+  font-size: 34.65rem;
+  width: 1em;
+}
+
+.icon-spinner{
+  font-size: 43.615rem;
+  width: 1em;
+}
+
+body{
+  font-family: "HelveticaReg";
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+html{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*{
+  min-height: 0;
+  min-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin: 0;
+}
+
+ul,
+li,
+ol{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video{
+  vertical-align: middle;
+}
+
+textarea{
+  resize: none;
+}
+
+input,
+select,
+textarea{
+  color: #ff6161;
+  font-family: "HelveticaReg";
+  outline: none;
+}
+
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.icon-spinner{
+  font-size: 10rem;
+}
+.icon-spinner.red_mod{
+  color: red;
+}
+
+body{
+  background-color: #ff6161;
+}
+
+.test-wrap{
+  width: 500px;
+  height: 900px;
+  background-color: yellow;
+  position: relative;
+  margin: 0 auto;
+}
+
+.test{
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+  font-size: 2.0625rem;
+}
+.test:hover{
+  background-color: blue;
+}

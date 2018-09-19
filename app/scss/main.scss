@@ -1,62 +1,108 @@
-//font-family: 'SFNSDisplay';
-//font-family: 'PatuaOne-Regular';
-//font-family: 'HelveticaReg';
-$ff-main-title: 'SFNSDisplay';
-$ff-title: 'PatuaOne-Regular';
-$ff-text: 'HelveticaReg';
-
-$second-color: #ff6161;
-$third-color: #4d60cc;
-$text-color: #2c2c2c;
-
-@mixin tag-item(){
-
-}
-@mixin tag-item-hover{
-
-}
-@mixin img-on-bg{
-
-}
-
 @import "fonts";
+@import "vars";
+@import "mixins";
+@import "sprite";
 
-body {
+body{
   font-family: $ff-text;
   font-size: 1rem;
   line-height: 1.2;
 }
 
-html {
+html{
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+*{
+  min-height: 0;
+  min-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin: 0;
 }
 
 ul,
-ol {
+li,
+ol{
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
-input, select, textarea{
-  color: $second-color;
-  font-family: $ff-main-title;
+p{
+  margin: 0;
 }
 
-.clearfix {
+a{
+  text-decoration: none;
+  color: black;
+}
 
-  &:after {
-    content: '';
+audio,
+canvas,
+iframe,
+img,
+svg,
+video{
+  vertical-align: middle;
+}
+
+textarea{
+  resize: none;
+}
+
+input,
+select,
+textarea{
+  color: $second-color;
+  font-family: $ff-text;
+  outline: none;
+}
+
+.clearfix{
+  &:after{
+    content: "";
     display: table;
     clear: both;
   }
 }
 
+.icon-spinner{
+  font-size: 10rem;
+  &.red_mod{
+    color: red;
+  }
+}
 
 @import "responsive";
 
 body{
   background-color: $second-color;
+}
+
+.test-wrap{
+  @include size(500px,900px);
+  background-color: yellow;
+  position: relative;
+  margin: 0 auto;
+}
+
+.test{
+  @include absolute-all(20px);
+  font-size: rem(33);
+
+  &:hover{
+    background-color: blue;
+  }
 }
