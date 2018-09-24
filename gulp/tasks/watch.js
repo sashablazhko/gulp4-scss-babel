@@ -5,7 +5,8 @@ module.exports = function() {
       $.gulp.series('sassMain:dev')
     );
     $.gulp.watch('./app/scss/**/libs.min.{scss,sass}', $.gulp.series('sassLibs:dev'));
-    $.gulp.watch('app/jsbeforebabel/**/*.js', $.gulp.series('js:dev'));
-    $.gulp.watch('app/img/svgbeforesprite/*', $.gulp.series('svg:dev'));
+    $.gulp.watch('./app/jsbeforebabel/**/*.js', $.gulp.series('js:dev'));
+    $.gulp.watch('./app/*.html').on('change', $.bs.reload);
+    $.gulp.watch('./app/img/svgbeforesprite/*', $.gulp.series('svg:dev'));
   });
 };
